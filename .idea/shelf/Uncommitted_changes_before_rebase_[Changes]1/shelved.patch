@@ -1,0 +1,235 @@
+Index: wwr/.vscode/launch.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wwr/.vscode/launch.json b/wwr/.vscode/launch.json
+deleted file mode 100644
+--- a/wwr/.vscode/launch.json	(revision c413d603870b6fde44db519db8a95284b6544c32)
++++ /dev/null	(revision c413d603870b6fde44db519db8a95284b6544c32)
+@@ -1,14 +0,0 @@
+-{
+-    // Use IntelliSense to learn about possible attributes.
+-    // Hover to view descriptions of existing attributes.
+-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+-    "version": "0.2.0",
+-    "configurations": [
+-        {
+-            "type": "msedge",
+-            "request": "launch",
+-            "name": "Open overlay.html",
+-            "file": "c:\\Users\\hp\\OneDrive\\Bureau\\wdd130\\Week_03\\overlay.html"
+-        }
+-    ]
+-}
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1743296242246)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1743296242246)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1743296242243)
++++ b/.idea/.gitignore	(date 1743296242243)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: wwr/styles/rafting.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>:root {\r\n    \r\n    --primary-color: #53d28a; \r\n    --secondary-color: #F08080;\r\n    --accent1-color: #F5F5DC; \r\n    --accent2-color: #4682B4;\r\n\r\n  \r\n    --heading-font: \"Montserrat\", sans-serif;\r\n    --text-font: \"Open Sans\", sans-serif;\r\n}\r\n\r\nbody {\r\n    font-family: var(--text-font);\r\n    background-color: var(--accent1-color);\r\n    color: #333; \r\n    \r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    max-width: 960px; /* Example: Limiting the width for better readability */\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\nheader {\r\n    background-color: var(--primary-color);\r\n    color: white;\r\n    padding: 20px;\r\n    text-align: center;\r\n}\r\n\r\n.logo img {\r\n    max-width: 100px; /* Adjust as needed */\r\n    height: auto;\r\n    margin-bottom: 10px;\r\n}\r\n\r\nh1, h2, h3 {\r\n    font-family: var(--heading-font);\r\n    color: var(--secondary-color);\r\n}\r\n\r\nmain {\r\n    padding: 20px;\r\n}\r\n\r\n.hero {\r\n    position: relative; /* Make the hero a positioning context for absolute children */\r\n    width: 100%; /* Take full width of the main container */\r\n    height: 400px; /* Adjust as needed for the hero image to be visible */\r\n    margin-bottom: 20px;\r\n    overflow: hidden; /* Hide any part of the image that overflows */\r\n}\r\n\r\n.hero img {\r\n    display: block;\r\n    width: 100%;\r\n    height: auto;\r\n    object-fit: cover; /* Ensure image covers the container without distortion */\r\n}\r\n\r\n.hero h1 {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%); /* Center the heading */\r\n    color: white;\r\n    font-size: 2.5em; /* Adjust font size */\r\n    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a text shadow for better readability */\r\n}\r\n\r\narticle {\r\n    position: absolute;\r\n    bottom: 20px;\r\n    left: 20px;\r\n    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n    max-width: 80%; /* Limit the width of the article */\r\n}\r\n\r\narticle img {\r\n    max-width: 80px; /* Adjust as needed */\r\n    height: auto;\r\n    float: right; /* Float the image to the right */\r\n    margin-left: 15px; /* Add some space between image and text */\r\n    margin-bottom: 15px;\r\n}\r\n\r\nsection {\r\n    padding: 20px;\r\n    margin-bottom: 20px;\r\n    background-color: white;\r\n    border-radius: 5px;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nsection h2 {\r\n    color: var(--primary-color);\r\n    margin-bottom: 10px;\r\n}\r\n\r\nsection img {\r\n    max-width: 100%; /* Make sure images in sections don't overflow */\r\n    height: auto;\r\n    display: block; /* Remove extra space below images */\r\n    margin-bottom: 10px;\r\n}\r\n\r\nfooter {\r\n    background-color: #333;\r\n    color: white;\r\n    text-align: center;\r\n    padding: 10px;\r\n    position: fixed;\r\n    bottom: 0;\r\n    width: 100%;\r\n    \r\n}\r\n\r\n.social-links a {\r\n    display: inline-block; /* Allows for padding/margin */\r\n    margin: 0 10px; /* Space between social media icons */\r\n    text-decoration: none; /* Remove underlines from social media links */\r\n}\r\n\r\n.social-links img {\r\n    width: 30px; /* Adjust icon size as needed */\r\n    height: auto;\r\n    vertical-align: middle; /* Align icons vertically */\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wwr/styles/rafting.css b/wwr/styles/rafting.css
+--- a/wwr/styles/rafting.css	(revision c413d603870b6fde44db519db8a95284b6544c32)
++++ b/wwr/styles/rafting.css	(date 1743296242326)
+@@ -9,7 +9,13 @@
+     --heading-font: "Montserrat", sans-serif;
+     --text-font: "Open Sans", sans-serif;
+ }
+-
++a {
++    text-decoration : none;
++}
++img {
++    width: 50%; /* Sets the image to 50% of its original width */
++    height: auto; /* Adjusts the height to maintain the aspect ratio */
++}
+ body {
+     font-family: var(--text-font);
+     background-color: var(--accent1-color);
+@@ -22,7 +28,6 @@
+     margin-left: auto;
+     margin-right: auto;
+ }
+-
+ header {
+     background-color: var(--primary-color);
+     color: white;
+@@ -57,7 +62,7 @@
+     display: block;
+     width: 100%;
+     height: auto;
+-    object-fit: cover; /* Ensure image covers the container without distortion */
++    object-fit: cover;
+ }
+ 
+ .hero h1 {
+@@ -82,10 +87,10 @@
+ }
+ 
+ article img {
+-    max-width: 80px; /* Adjust as needed */
++    max-width: 80px; 
+     height: auto;
+-    float: right; /* Float the image to the right */
+-    margin-left: 15px; /* Add some space between image and text */
++    float: right; 
++    margin-left: 15px; 
+     margin-bottom: 15px;
+ }
+ 
+@@ -103,31 +108,32 @@
+ }
+ 
+ section img {
+-    max-width: 100%; /* Make sure images in sections don't overflow */
++    max-width: 100%; 
+     height: auto;
+-    display: block; /* Remove extra space below images */
++    display: block; 
+     margin-bottom: 10px;
+ }
+ 
+ footer {
+-    background-color: #333;
+-    color: white;
+-    text-align: center;
+-    padding: 10px;
+-    position: fixed;
+-    bottom: 0;
+-    width: 100%;
+-    
+-}
+-
+-.social-links a {
+-    display: inline-block; /* Allows for padding/margin */
+-    margin: 0 10px; /* Space between social media icons */
+-    text-decoration: none; /* Remove underlines from social media links */
+-}
+-
+-.social-links img {
+-    width: 30px; /* Adjust icon size as needed */
+-    height: auto;
+-    vertical-align: middle; /* Align icons vertically */
+-}
+\ No newline at end of file
++    background-color: #f0f0f0; 
++    padding: 20px 0; 
++    text-align: center; 
++    border-top: 1px solid #ddd; 
++  }
++  
++  footer .sociallinks img {
++    height: 25px; 
++    width: auto; 
++    transition: transform 0.3s ease;
++  }
++  
++  footer .sociallinks img:hover {
++    transform: scale(1.1);
++  }
++  
++  
++  footer p {
++    margin-bottom: 10px;
++    font-size: 0.9em;
++    color: #555;
++  }
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1743296242245)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1743296242245)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++  </profile>
++</component>
+\ No newline at end of file
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1743296242251)
++++ b/.idea/vcs.xml	(date 1743296242251)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1743296242248)
++++ b/.idea/misc.xml	(date 1743296242248)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1743296242250)
++++ b/.idea/modules.xml	(date 1743296242250)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/wdd130.iml" filepath="$PROJECT_DIR$/.idea/wdd130.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/wdd130.iml
+===================================================================
+diff --git a/.idea/wdd130.iml b/.idea/wdd130.iml
+new file mode 100644
+--- /dev/null	(date 1743296242252)
++++ b/.idea/wdd130.iml	(date 1743296242252)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file

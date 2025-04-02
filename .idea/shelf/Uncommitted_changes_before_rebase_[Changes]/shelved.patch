@@ -1,0 +1,113 @@
+Index: wwr/about.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en-US\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>NAZOVILLE Rafting</title>\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"crossorigin>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700display=swap\"rel=\"stylesheet\">\r\n    <link rel=\"stylesheet\" href=\"styles/rafting.css\">\r\n</head>\r\n<body>\r\n    <header>\r\n        \r\n        <nav>\r\n            <div class=\"logo\">\r\n                <img src=\"images/logo.jpg\" alt=\"Your Rafting Company Logo\">\r\n            </div>\r\n            <a href=\"#\">HOME</a>\r\n            <a href=\"#\">Trips</a>\r\n            <a href=\"#\">Contact Us</a>\r\n            <a href=\"#\">About Us</a>\r\n            \r\n        </nav>\r\n    </header>\r\n\r\n    <main>\r\n        <div class=\"hero\">\r\n            <img src=\"images/photo-acc.jpeg\" alt=\"White Water Rafting Adventure\">\r\n            <h1>NAZOVILLE RAFTING</h1>\r\n        </div>\r\n\r\n        <article>\r\n            <img src=\"images/happy.jpg\" alt=\"Happy Client\">\r\n            <p>Providing thrilling and safe white water rafting experiences for adventurers of all levels. Our mission is to create unforgettable memories and connect people with the beauty of nature through exhilarating river trips.</p>\r\n        </article>\r\n\r\n        <section>\r\n            <h2>History</h2>\r\n            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>\r\n        </section>\r\n\r\n        <section>\r\n            <h2>Adventure Awaits You!</h2>\r\n            <img src=\"images/tof1.avif\" alt=\"White Water Rafting\">\r\n            <img src=\"images/tof2.jpg\" alt=\"White Water Rafting\">\r\n            <img src=\"images/tof3.jpg\" alt=\"White Water Rafting\">\r\n            <img src=\"images/tof4.webp\" alt=\"White Water Rafting\">\r\n            <img src=\"images/tof5.jpeg\" alt=\"White Water Rafting\">\r\n        </section>\r\n        \r\n    </main>\r\n\r\n    <footer>\r\n        <p>&copy; 2025 NAZOVILLE Rafting  - Julien LAWSON</p>\r\n        <div class=\"social-links\">\r\n            <a href=\"https://www.facebook.com\" target=\"_blank\">\r\n                <img src=\"images/8444249_facebook_media_multimedia_icon.svg\" alt=\"Facebook\">\r\n            </a>\r\n            <a href=\"https://www.twitter.com\" target=\"_blank\">\r\n                <img src=\"images/5296516_tweet_twitter_twitter logo_icon.svg\" alt=\"Twitter\">\r\n            </a>\r\n            <a href=\"https://www.instagram.com\" target=\"_blank\">\r\n                <img src=\"images/6929237_instagram_icon.svg\" alt=\"Instagram\">\r\n            </a>\r\n        </div>\r\n       \r\n    </footer>\r\n</body>\r\n</html>
+===================================================================
+diff --git a/wwr/about.html b/wwr/about.html
+--- a/wwr/about.html	(revision c413d603870b6fde44db519db8a95284b6544c32)
++++ b/wwr/about.html	(date 1743296242254)
+@@ -3,68 +3,68 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>NAZOVILLE Rafting</title>
++    <title>About Us - NAZOVILLE</title>
++    <meta name="description" content="Learn about our rafting company, our history, and what makes us unique.">
++    <meta name="Julien Lawson" content="Your Name">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+-    <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700display=swap"rel="stylesheet">
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles/rafting.css">
+ </head>
+ <body>
+     <header>
+-        
+-        <nav>
+-            <div class="logo">
+-                <img src="images/logo.jpg" alt="Your Rafting Company Logo">
+-            </div>
+-            <a href="#">HOME</a>
+-            <a href="#">Trips</a>
+-            <a href="#">Contact Us</a>
+-            <a href="#">About Us</a>
+-            
++        <div class="logo">
++            <img src="images/logo.png" alt="logo">
++        </div>
++        <nav>
++            <a href="index.html">Home</a>
++            <a href="about.html">About Us</a>
++            <a href="trips.html">Trips</a>
++            <a href="contact.html">Contact</a>
+         </nav>
+     </header>
+ 
+     <main>
+         <div class="hero">
+-            <img src="images/photo-acc.jpeg" alt="White Water Rafting Adventure">
++            <img src="images/accueil.jpg" alt="hero">
+             <h1>NAZOVILLE RAFTING</h1>
+-        </div>
+-
+-        <article>
+-            <img src="images/happy.jpg" alt="Happy Client">
+-            <p>Providing thrilling and safe white water rafting experiences for adventurers of all levels. Our mission is to create unforgettable memories and connect people with the beauty of nature through exhilarating river trips.</p>
+-        </article>
++            <article>
++                <img src="images/happy.jpg" alt="Image of Team or Happy Client">
++                <p>We are a passionate team dedicated to providing unforgettable rafting experiences.  Our mission is to connect people with nature and adventure.</p>
++            </article>
++        </div>
++
++        
+ 
+         <section>
+             <h2>History</h2>
+-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
++            <p>Founded in 2020, NAZOVILLE RAFTING has grown from a small local operation to a leading provider of rafting adventures in the region.  We have a rich history of exploring these rivers and sharing their beauty with our customers.</p>
+         </section>
+ 
+         <section>
+-            <h2>Adventure Awaits You!</h2>
+-            <img src="images/tof1.avif" alt="White Water Rafting">
+-            <img src="images/tof2.jpg" alt="White Water Rafting">
+-            <img src="images/tof3.jpg" alt="White Water Rafting">
+-            <img src="images/tof4.webp" alt="White Water Rafting">
+-            <img src="images/tof5.jpeg" alt="White Water Rafting">
++            <h2>adventure Awaits You!</h2>
++            <img src="images/photo (1).jpg" alt="photo1">
++            <img src="images/photo (2).jpg" alt="photo2">
++            <img src="images/photo (3).jpg" alt="photo3">
++            <img src="images/photo (4).jpg" alt="photo4">
++            <img src="images/photo (5).jpg" alt="photo5">
++        
+         </section>
+-        
+     </main>
+ 
+     <footer>
+-        <p>&copy; 2025 NAZOVILLE Rafting  - Julien LAWSON</p>
+-        <div class="social-links">
+-            <a href="https://www.facebook.com" target="_blank">
++        <p>&copy; 2025 NAZOVILLE | Julien Lawson</p>
++        <nav class="sociallinks">
++            <a href="https://facebook.com" target="_blank">
+                 <img src="images/8444249_facebook_media_multimedia_icon.svg" alt="Facebook">
+             </a>
+-            <a href="https://www.twitter.com" target="_blank">
++            <a href="https://twitter.com" target="_blank">
+                 <img src="images/5296516_tweet_twitter_twitter logo_icon.svg" alt="Twitter">
+             </a>
+-            <a href="https://www.instagram.com" target="_blank">
++            <a href="https://instagram.com" target="_blank">
+                 <img src="images/6929237_instagram_icon.svg" alt="Instagram">
+             </a>
+-        </div>
+-       
++        </nav>
+     </footer>
+ </body>
+ </html>
+\ No newline at end of file
