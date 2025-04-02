@@ -128,10 +128,21 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 #history {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
 }
+
+#history h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#history p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 article {
     padding: 10px;
     border: 1px solid #ccc;
@@ -156,29 +167,38 @@ article img {
     margin-bottom: 15px;
 }
 #adventures {
-    display: flex;
-    justify-content: space-between;
-}
-figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
-    margin: auto;
-  }
-  .img {
-    width: 220;
-    height: 150;
-  }
-  
-  figcaption {
-    background-color: #ece8e8;
-    color: #0e0101;
-    font: italic smaller sans-serif;
-    padding: 3px;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
     text-align: center;
-  }
+}
+
+#adventures h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images in a row */
+    gap: 20px;
+    justify-items: center;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 
 section {
@@ -195,16 +215,24 @@ section h2 {
 }
 
 
-.sociallinks img {
-    height: 30px; 
-    width: auto;
-    transition: transform 0.3s ease;
-    border-radius: 50%; 
-  }
-  
-  .sociallinks img:hover {
-    transform: scale(1.1);
-  }
+
+
+
   footer {
-    text-align: center; 
-  }
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end; /* Align the icons to the right */
+    gap: 15px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
